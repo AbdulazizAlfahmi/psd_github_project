@@ -8,6 +8,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
 
 
 def get_filters():
+            ''' Asking the user to insert the input of the filter '''
 
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
@@ -69,6 +70,7 @@ def get_filters():
 
 
 def load_data(city, month, day):
+            '''Filtering the data based on the user inputs '''
     df = pd.read_csv(CITY_DATA[city])
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -138,7 +140,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+                """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -163,8 +165,9 @@ def user_stats(df):
 
     print('-'*40)
 
-
 def rawdata(df):
+                '''Displays the raw data , five rows at a time '''
+
     x = input('If you want to see 5 rows of the raw data write "yes" , otherwise write "no"\n')
     y = 0
     z = 5

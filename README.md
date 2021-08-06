@@ -11,4 +11,4 @@ The objective of the project is to write a code that gives the user general stat
 The file is under the name of Bikeshare-project in this repository
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The first and second Functions used in the python-script are a modified version from the code given in project section of python course.
