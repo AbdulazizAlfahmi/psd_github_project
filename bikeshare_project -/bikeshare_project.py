@@ -180,10 +180,14 @@ def rawdata(df):
             print(df.iloc[y:z])
             y += 5
             z += 5
-            x = input('if you eant to see more 5 rows of the raw data enter "yes" , otherwise write  "no" \n')
-            if x in ['yes', 'no']:
+            while True:
+                x = input(
+                    'if you eant to see more 5 rows of the raw data enter "yes" , otherwise write  "no" \n')
+                if x in ['yes', 'no']:
+                    break
+                print('Ops invalid entry , please try again')
+            if x == 'no':
                 break
-            print('Ops invalid entry , please try again')
 
 
 def main():
@@ -197,9 +201,10 @@ def main():
         user_stats(df)
         rawdata(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
+        while True:
+            restart = input('\nWould you like to restart? Enter yes or no.\n')
+            if restart.lower() != 'yes':
+                break
 
 
 if __name__ == "__main__":
