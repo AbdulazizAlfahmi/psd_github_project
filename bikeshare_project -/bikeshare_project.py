@@ -203,8 +203,12 @@ def main():
 
         while True:
             restart = input('\nWould you like to restart? Enter yes or no.\n')
-            if restart.lower() != 'yes':
+            if restart.lower() in ['yes', 'no']:
                 break
+            print('Ops invalid entry , please try again')
+
+        if restart.lower() == 'no':
+            break
 
 
 if __name__ == "__main__":
