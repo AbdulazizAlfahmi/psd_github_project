@@ -4,15 +4,11 @@
 Include the date you created this project and README file.
 
 ### Project Title
-Replace the Project Title
-
+Bikeshare project using python language
 ### Description
-Describe what your project is about and what it does
-
+The objective of the project is to write a code that gives the user general statistics information about the data gathared from Bikeshare company in Washington , New York City and Chicago
 ### Files used
-Include the files used
+The file is under the name of Bikeshare-project in this repository
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
-### DATE of ending the project
+The first and second Functions used in the python-script are a modified version from the code given in project section of python course.
